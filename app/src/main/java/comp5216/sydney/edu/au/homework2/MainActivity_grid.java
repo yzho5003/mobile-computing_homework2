@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.GridView;
 import android.widget.Switch;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -15,6 +16,10 @@ import java.util.ArrayList;
  */
 
 public class MainActivity_grid extends AppCompatActivity {
+
+    //variables
+    public final static int ADD_NEW_ITEM = 100;
+
     //ui variables
     GridView gridView;
     Button buttonNew;
@@ -48,6 +53,19 @@ public class MainActivity_grid extends AppCompatActivity {
         itemsAdapter.add(newItem);
     }
 
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (requestCode == ADD_NEW_ITEM) {
+            if (resultCode == RESULT_OK) {
+                String newItemTextValue=data.getStringExtra("itemText");
+                String newItemImageUri = data.getStringExtra("imgUri");
+                CustomItem newItem = new CustomItem(newItemTextValue, newItemImageUri, "location");
+                Toast.makeText(this, "Picture taken!" + newItemTextValue, Toast.LENGTH_SHORT).show();
+                itemsAdapter.add(newItem);
+            }
+        }
+    }
+
     public void switchViewToList(View view){
         Intent intent = new Intent(MainActivity_grid.this, MainActivity_list.class);
 
@@ -59,7 +77,7 @@ public class MainActivity_grid extends AppCompatActivity {
     public void addNewItem(View view){
         Intent intent = new Intent(this, EditAndAddItem.class);
         if(intent != null){
-            startActivity(intent);
+            startActivityForResult(intent, ADD_NEW_ITEM);
         }
     }
 }

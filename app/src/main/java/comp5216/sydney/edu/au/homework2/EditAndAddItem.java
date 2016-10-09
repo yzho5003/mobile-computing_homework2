@@ -8,11 +8,11 @@ import android.os.Environment;
 import android.provider.MediaStore;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.io.File;
 import java.text.SimpleDateFormat;
@@ -29,7 +29,10 @@ public class EditAndAddItem extends AppCompatActivity {
 
     //media
     public final static int CAPTURE_IMAGE_ACTIVITY_REQUEST_CODE = 1034;
-    public String photoFileName = "photo.jpg";
+    public String photoFileName;
+    public File imageFile;
+    public Uri tempuri;
+    public static int mediaIndex;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,6 +50,9 @@ public class EditAndAddItem extends AppCompatActivity {
         SimpleDateFormat s = new SimpleDateFormat("dd-mm-yyyy");
         time.setText(s.format(new Date()));
 
+        //init media fiel number
+        mediaIndex = 0;
+
         //get IntExtra data, e.g. position
 
     }
@@ -56,12 +62,10 @@ public class EditAndAddItem extends AppCompatActivity {
         String itemTextString = itemText.getText().toString();
         if(itemTextString != null && itemTextString.length()>0){
             Intent intentPrevious = new Intent(EditAndAddItem.this, MainActivity_list.class);
-            //put extra information into the bundle for access in the mainactivity
+            //put extra information into the bundle for access in the main activity
             intentPrevious.putExtra("itemText", itemTextString);
-            //media url
-            //position data
-            //BRING UP THE MAIN ACTIVITY
-            //setResult(Activity.RESULT_OK, returnData);
+            intentPrevious.putExtra("imgUri", tempuri.toString());
+            setResult(RESULT_OK,intentPrevious);
             finish();
         }
     }
@@ -88,23 +92,27 @@ public class EditAndAddItem extends AppCompatActivity {
                 });
     }
 
-    public Uri getFileUri(String fileName) {
-        // Get safe storage directory for photos
-        File mediaStorageDir = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES), "HOMEWORK2");
-
-        // Create the storage directory if it does not exist
-        if (!mediaStorageDir.exists() && !mediaStorageDir.mkdirs())
-        { Log.d("HOMEWORK2", "failed to create directory");
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (requestCode == CAPTURE_IMAGE_ACTIVITY_REQUEST_CODE) {
+            if (resultCode == RESULT_OK) {
+                Toast.makeText(this, "Picture taken!" + tempuri.toString(), Toast.LENGTH_SHORT).show();
+                // Load the taken image into a preview
+            } else { // Result was a failure
+                Toast.makeText(this, "Picture wasn't taken!", Toast.LENGTH_SHORT).show();
+            }
         }
-
-        // Return the file target for the photo based on filename
-        return Uri.fromFile(new File(mediaStorageDir.getPath() + File.separator + fileName));
     }
 
     public void onTakePhoto(View view){
-        Intent photoIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-        String fileName = "photo.jpg";
-        photoIntent.putExtra(MediaStore.EXTRA_OUTPUT, getFileUri(fileName));
-        startActivityForResult(photoIntent, CAPTURE_IMAGE_ACTIVITY_REQUEST_CODE);
+
+        Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+        mediaIndex++;
+        photoFileName = "test" + mediaIndex + ".jpg";
+        imageFile = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES), photoFileName);
+        tempuri = Uri.fromFile(imageFile);
+
+        intent.putExtra(MediaStore.EXTRA_OUTPUT, tempuri.toString());
+        startActivityForResult(intent, CAPTURE_IMAGE_ACTIVITY_REQUEST_CODE);
     }
 }

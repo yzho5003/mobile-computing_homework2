@@ -45,7 +45,16 @@ public class CustomListAdapter extends ArrayAdapter<CustomItem> {
         ImageView img = (ImageView) convertView.findViewById(R.id.img);
         TextView text = (TextView) convertView.findViewById(R.id.txt);
         //populate the data into the template view using the data object
-        img.setImageResource(R.drawable.image1);
+        try {
+//            img.setImageURI(Uri.fromFile(new File(item.imagePath)));
+//            File imageFile = new File(item.imagePath);
+//            img.setImageResource(imageFile);
+
+            Log.e("IMAGEPATH", item.imagePath);
+        } catch (Exception e) {
+            img.setImageResource(R.drawable.image1);
+            return null;
+        }
         text.setText(item.text);
         //Return the completed view to render on screen
         return convertView;
