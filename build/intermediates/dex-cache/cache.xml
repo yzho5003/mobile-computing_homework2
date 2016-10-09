@@ -12,15 +12,6 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Users/jason/Downloads/Homework2/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="24.0.1"
-        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
-        <dex dex="/Users/jason/Downloads/Homework2/app/build/intermediates/pre-dexed/debug/com.android.support-support-fragment-24.2.1_5f65f0c441f141f05085bab1b947c8bd1df62156.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="/Users/jason/Github/homework2/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/jars/libs/internal_impl-24.2.1.jar"
         jumboMode="false"
         optimize="true"
@@ -30,57 +21,12 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Users/jason/Downloads/Homework2/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="24.0.1"
-        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
-        <dex dex="/Users/jason/Downloads/Homework2/app/build/intermediates/pre-dexed/debug/com.android.support-support-compat-24.2.1_8c1b096d13b2a31a1f2fdaa5e75ac94899689930.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/jason/Github/homework2/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="24.0.1"
-        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
-        <dex dex="/Users/jason/Github/homework2/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-ui-24.2.1_a4abec5d31f6de0ce349926bd1016fc1d9367ed3.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="/Users/jason/Downloads/Homework2/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.2.1/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="24.0.1"
         sha1="d5c731fc64c03dfe04d51134955b483551c35849">
         <dex dex="/Users/jason/Downloads/Homework2/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-24.2.1_d5d27476c1e3269bf72ffb52242e12e8d8a89cab.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/jason/Github/homework2/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.2.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="24.0.1"
-        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
-        <dex dex="/Users/jason/Github/homework2/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-24.2.1_418c695710ebf1deaaf9a88ad9a31358a182963e.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/jason/Github/homework2/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="24.0.1"
-        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
-        <dex dex="/Users/jason/Github/homework2/app/build/intermediates/pre-dexed/debug/internal_impl-24.2.1_2e941ae83fad4b2285005dc563c4564c46ac9869.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/jason/Downloads/Homework2/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="24.0.1"
-        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
-        <dex dex="/Users/jason/Downloads/Homework2/app/build/intermediates/pre-dexed/debug/internal_impl-24.2.1_5f98e19bf47d48d0f0d9a3ccdf70f4cfe74a2ff6.jar" />
     </item>
     <item
         is-multidex="false"
@@ -111,39 +57,12 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Users/jason/Github/homework2/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="24.0.1"
-        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
-        <dex dex="/Users/jason/Github/homework2/app/build/intermediates/pre-dexed/debug/com.android.support-support-media-compat-24.2.1_7b81319720d0280a55ef7404cd336bc7e833f3ce.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/jason/Downloads/Homework2/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="24.0.1"
-        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
-        <dex dex="/Users/jason/Downloads/Homework2/app/build/intermediates/pre-dexed/debug/com.android.support-support-media-compat-24.2.1_909707bd0b1ebe354b95d21cafc11ff68c41dca2.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="/Users/jason/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/24.2.1/support-annotations-24.2.1.jar"
         jumboMode="false"
         optimize="true"
         revision="24.0.1"
         sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
         <dex dex="/Users/jason/Downloads/Homework2/app/build/intermediates/pre-dexed/debug/support-annotations-24.2.1_d9ebd0cc940519ab6f919957043d74d23c788fc6.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/jason/Downloads/Homework2/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="24.0.1"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="/Users/jason/Downloads/Homework2/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-24.2.1_0ba5c77a1e9c60088bb1267be91aca2a652d7cdc.jar" />
     </item>
     <item
         is-multidex="false"
@@ -156,39 +75,21 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Users/jason/Downloads/Homework2/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/libs/internal_impl-24.2.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="24.0.1"
-        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
-        <dex dex="/Users/jason/Downloads/Homework2/app/build/intermediates/pre-dexed/debug/internal_impl-24.2.1_88f6cc9580e38bacaa9662b08007e9de30a138f3.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/jason/Downloads/Homework2/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.2.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="24.0.1"
-        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
-        <dex dex="/Users/jason/Downloads/Homework2/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-24.2.1_723f71653835cc31839da20e0aa045c39f79a7f2.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/jason/Downloads/Homework2/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="24.0.1"
-        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
-        <dex dex="/Users/jason/Downloads/Homework2/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-ui-24.2.1_9d55d5fa45e05096934048830c9242a0567c0881.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="/Users/jason/Downloads/Homework2/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/libs/internal_impl-24.2.1.jar"
         jumboMode="false"
         optimize="true"
         revision="24.0.1"
         sha1="867dad63c33388ff8c7644b236579355036d075f">
         <dex dex="/Users/jason/Downloads/Homework2/app/build/intermediates/pre-dexed/debug/internal_impl-24.2.1_31ccf40a306b3dbcf11e2202674a3b27090b1040.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jason/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-applinks/1.4.0/8ad21bf21784dacce5f2043afb97218cc377e835/bolts-applinks-1.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.1"
+        sha1="8ad21bf21784dacce5f2043afb97218cc377e835">
+        <dex dex="/Users/jason/Github/homework2/app/build/intermediates/pre-dexed/debug/bolts-applinks-1.4.0_352193ec176e7dd26e7ec6fd0f76426540158551.jar" />
     </item>
     <item
         is-multidex="false"
@@ -210,6 +111,168 @@
     </item>
     <item
         is-multidex="false"
+        jar="/Users/jason/Downloads/Homework2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.1"
+        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
+        <dex dex="/Users/jason/Downloads/Homework2/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-24.2.1_9c1ac323d4dad22c805d36ceff02b2538ca4e679.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jason/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.1"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="/Users/jason/Github/homework2/app/build/intermediates/pre-dexed/debug/bolts-tasks-1.4.0_d2bee8aef7a080c238e009b622518a29f9df40cb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jason/Downloads/Homework2/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.1"
+        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
+        <dex dex="/Users/jason/Downloads/Homework2/app/build/intermediates/pre-dexed/debug/internal_impl-24.2.1_d6333ddf87f9df23dd4d1a1eeb83d27686fe0fa2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jason/Downloads/Homework2/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.1"
+        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
+        <dex dex="/Users/jason/Downloads/Homework2/app/build/intermediates/pre-dexed/debug/com.android.support-support-fragment-24.2.1_5f65f0c441f141f05085bab1b947c8bd1df62156.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jason/Downloads/Homework2/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.1"
+        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
+        <dex dex="/Users/jason/Downloads/Homework2/app/build/intermediates/pre-dexed/debug/com.android.support-support-compat-24.2.1_8c1b096d13b2a31a1f2fdaa5e75ac94899689930.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jason/Github/homework2/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.1"
+        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
+        <dex dex="/Users/jason/Github/homework2/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-ui-24.2.1_a4abec5d31f6de0ce349926bd1016fc1d9367ed3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jason/Github/homework2/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.1"
+        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
+        <dex dex="/Users/jason/Github/homework2/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-24.2.1_418c695710ebf1deaaf9a88ad9a31358a182963e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jason/Github/homework2/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.1"
+        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
+        <dex dex="/Users/jason/Github/homework2/app/build/intermediates/pre-dexed/debug/internal_impl-24.2.1_2e941ae83fad4b2285005dc563c4564c46ac9869.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jason/Downloads/Homework2/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.1"
+        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
+        <dex dex="/Users/jason/Downloads/Homework2/app/build/intermediates/pre-dexed/debug/internal_impl-24.2.1_5f98e19bf47d48d0f0d9a3ccdf70f4cfe74a2ff6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jason/Github/homework2/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.16.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.1"
+        sha1="99d79164a8f983161bdb59b1403b9e4a1127aae1">
+        <dex dex="/Users/jason/Github/homework2/app/build/intermediates/pre-dexed/debug/com.facebook.android-facebook-android-sdk-4.16.1_87c01d3a43083076f6311a16762dece2efe180b8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jason/Github/homework2/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.1"
+        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
+        <dex dex="/Users/jason/Github/homework2/app/build/intermediates/pre-dexed/debug/com.android.support-support-media-compat-24.2.1_7b81319720d0280a55ef7404cd336bc7e833f3ce.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jason/Github/homework2/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.4.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.1"
+        sha1="d9ecde39b460470e655de6e47c05573d2d5a8bfb">
+        <dex dex="/Users/jason/Github/homework2/app/build/intermediates/pre-dexed/debug/com.android.support-cardview-v7-23.4.0_fe59781a8f700062fce04a7ed5c058b9dc1d9c69.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jason/Downloads/Homework2/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.1"
+        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
+        <dex dex="/Users/jason/Downloads/Homework2/app/build/intermediates/pre-dexed/debug/com.android.support-support-media-compat-24.2.1_909707bd0b1ebe354b95d21cafc11ff68c41dca2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jason/Downloads/Homework2/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.1"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/jason/Downloads/Homework2/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-24.2.1_0ba5c77a1e9c60088bb1267be91aca2a652d7cdc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jason/Downloads/Homework2/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.1"
+        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
+        <dex dex="/Users/jason/Downloads/Homework2/app/build/intermediates/pre-dexed/debug/internal_impl-24.2.1_88f6cc9580e38bacaa9662b08007e9de30a138f3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jason/Github/homework2/app/build/intermediates/exploded-aar/com.android.support/customtabs/23.4.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.1"
+        sha1="2d1eaa9e0b98f8fc4c2b989d9b30d4f1480648ac">
+        <dex dex="/Users/jason/Github/homework2/app/build/intermediates/pre-dexed/debug/com.android.support-customtabs-23.4.0_4f71e177784db1e74139812245b873040e65a195.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jason/Downloads/Homework2/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.1"
+        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
+        <dex dex="/Users/jason/Downloads/Homework2/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-24.2.1_723f71653835cc31839da20e0aa045c39f79a7f2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jason/Downloads/Homework2/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.1"
+        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
+        <dex dex="/Users/jason/Downloads/Homework2/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-ui-24.2.1_9d55d5fa45e05096934048830c9242a0567c0881.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/Users/jason/Github/homework2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/jars/classes.jar"
         jumboMode="false"
         optimize="true"
@@ -228,15 +291,6 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Users/jason/Downloads/Homework2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="24.0.1"
-        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
-        <dex dex="/Users/jason/Downloads/Homework2/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-24.2.1_9c1ac323d4dad22c805d36ceff02b2538ca4e679.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="/Users/jason/Github/homework2/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.1/jars/classes.jar"
         jumboMode="false"
         optimize="true"
@@ -252,15 +306,6 @@
         revision="24.0.1"
         sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
         <dex dex="/Users/jason/Github/homework2/app/build/intermediates/pre-dexed/debug/com.android.support-support-fragment-24.2.1_bf11c190542ef3d0605a53386f38531d440dc4a7.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/jason/Downloads/Homework2/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="24.0.1"
-        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
-        <dex dex="/Users/jason/Downloads/Homework2/app/build/intermediates/pre-dexed/debug/internal_impl-24.2.1_d6333ddf87f9df23dd4d1a1eeb83d27686fe0fa2.jar" />
     </item>
 
 </items>
