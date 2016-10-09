@@ -52,4 +52,11 @@ public class MainActivity_list extends AppCompatActivity {
             startActivity(intent);
         }
     }
+
+    public void addNewItem(View view){
+        Intent intent = new Intent(this, EditAndAddItem.class);
+        if(intent != null){
+            startActivity(intent);
+        }
+    }
 }

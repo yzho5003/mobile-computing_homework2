@@ -9,7 +9,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:background="@color/backgroundColor"
-    tools:context="comp5216.sydney.edu.au.homework1.MainActivity_listView">
+    tools:context="comp5216.sydney.edu.au.homework2.EditAndAddItem">
 
     <ListView
         android:layout_width="100dp"
@@ -25,7 +25,7 @@
         android:layout_height="wrap_content"
         android:text="ADD NEW"
         android:id="@+id/btnAddItem"
-        android:onClick="addItem"
+        android:onClick="addNewItem"
         android:layout_above="@+id/switchView"
         android:layout_centerHorizontal="true"/>
 

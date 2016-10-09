@@ -55,4 +55,11 @@ public class MainActivity_grid extends AppCompatActivity {
             startActivity(intent);
         }
     }
+
+    public void addNewItem(View view){
+        Intent intent = new Intent(this, EditAndAddItem.class);
+        if(intent != null){
+            startActivity(intent);
+        }
+    }
 }

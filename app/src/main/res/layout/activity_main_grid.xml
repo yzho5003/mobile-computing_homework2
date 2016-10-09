@@ -9,7 +9,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:background="@color/backgroundColor"
-    tools:context="comp5216.sydney.edu.au.homework1.MainActivity_listView">
+    tools:context="comp5216.sydney.edu.au.homework2.EditAndAddItem">
 
     <GridView
         android:layout_width="match_parent"
@@ -29,9 +29,9 @@
         android:layout_height="wrap_content"
         android:text="ADD NEW"
         android:id="@+id/btnAddItem"
-        android:onClick="addItem"
         android:layout_above="@+id/switchView"
-        android:layout_centerHorizontal="true"/>
+        android:layout_centerHorizontal="true"
+        android:onClick="addNewItem"/>
 
     <Switch
         android:layout_width="wrap_content"
