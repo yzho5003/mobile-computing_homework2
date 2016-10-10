@@ -1,17 +1,19 @@
 package comp5216.sydney.edu.au.homework2;
 
+import android.graphics.Bitmap;
+
 /**
  * Created by jason on 9/10/16.
  */
 
 public class CustomItem {
     public String text;
-    public String imagePath;
+    public Bitmap imageBitmap;
     public String location;
 
-    public CustomItem(String web, String imagePath, String location){
+    public CustomItem(String web, Bitmap imagePath, String location){
         this.text = web;
-        this.imagePath = imagePath;
+        this.imageBitmap = imagePath;
         this.location = location;
     }
 }

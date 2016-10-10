@@ -50,11 +50,12 @@ public class CustomListAdapter extends ArrayAdapter<CustomItem> {
 //            File imageFile = new File(item.imagePath);
 //            img.setImageResource(imageFile);
 
-            Log.e("IMAGEPATH", item.imagePath);
+
         } catch (Exception e) {
             img.setImageResource(R.drawable.image1);
             return null;
         }
+        img.setImageBitmap(item.imageBitmap);
         text.setText(item.text);
         //Return the completed view to render on screen
         return convertView;

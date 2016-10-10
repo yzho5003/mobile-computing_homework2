@@ -2,6 +2,8 @@ package comp5216.sydney.edu.au.homework2;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
@@ -11,6 +13,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -26,6 +29,8 @@ public class EditAndAddItem extends AppCompatActivity {
     Button buttonPhoto;
     Button buttonSave;
     TextView buttonClose;
+    public static ImageView cameraImage;
+    Bitmap cameraImageBitmap;
 
     //media
     public final static int CAPTURE_IMAGE_ACTIVITY_REQUEST_CODE = 1034;
@@ -45,6 +50,9 @@ public class EditAndAddItem extends AppCompatActivity {
         buttonPhoto = (Button) findViewById(R.id.buttonPhoto);
         buttonSave = (Button) findViewById(R.id.buttonSave);
         buttonClose = (TextView) findViewById(R.id.buttonClose);
+        cameraImage = (ImageView) findViewById(R.id.cameraImage);
+        cameraImageBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.image1);
+
 
         //init time TextView
         SimpleDateFormat s = new SimpleDateFormat("dd-mm-yyyy");
@@ -64,7 +72,8 @@ public class EditAndAddItem extends AppCompatActivity {
             Intent intentPrevious = new Intent(EditAndAddItem.this, MainActivity_list.class);
             //put extra information into the bundle for access in the main activity
             intentPrevious.putExtra("itemText", itemTextString);
-            intentPrevious.putExtra("imgUri", tempuri.toString());
+            intentPrevious.putExtra("imgBitmap", cameraImageBitmap);
+            intentPrevious.putExtra("imgPath", tempuri);
             setResult(RESULT_OK,intentPrevious);
             finish();
         }
@@ -97,6 +106,17 @@ public class EditAndAddItem extends AppCompatActivity {
         if (requestCode == CAPTURE_IMAGE_ACTIVITY_REQUEST_CODE) {
             if (resultCode == RESULT_OK) {
                 Toast.makeText(this, "Picture taken!" + tempuri.toString(), Toast.LENGTH_SHORT).show();
+                cameraImageBitmap = (Bitmap) data.getExtras().get("data");
+                cameraImage.setImageBitmap(cameraImageBitmap);
+
+//                try{
+//                    cameraImage.setImageDrawable(Drawable.createFromStream(
+//                            getContentResolver().openInputStream(tempuri),
+//                            null));
+//                } catch(Exception e){
+//
+//                }
+
                 // Load the taken image into a preview
             } else { // Result was a failure
                 Toast.makeText(this, "Picture wasn't taken!", Toast.LENGTH_SHORT).show();
@@ -110,7 +130,7 @@ public class EditAndAddItem extends AppCompatActivity {
         mediaIndex++;
         photoFileName = "test" + mediaIndex + ".jpg";
         imageFile = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES), photoFileName);
-        tempuri = Uri.fromFile(imageFile);
+        tempuri = Uri.fromFile(new File(imageFile.getPath() + File.separator));
 
         intent.putExtra(MediaStore.EXTRA_OUTPUT, tempuri.toString());
         startActivityForResult(intent, CAPTURE_IMAGE_ACTIVITY_REQUEST_CODE);

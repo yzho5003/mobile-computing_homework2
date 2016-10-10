@@ -1,6 +1,8 @@
 package comp5216.sydney.edu.au.homework2;
 
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -27,6 +29,7 @@ public class MainActivity_grid extends AppCompatActivity {
     ListView listView;
     Button buttonNew;
     Switch viewSwitch;
+    Bitmap cameraImageBitmap;
 
     //Construct the data source
     ArrayList<CustomItem> items;
@@ -45,6 +48,7 @@ public class MainActivity_grid extends AppCompatActivity {
         listView = (ListView)findViewById(R.id.listView);
         buttonNew = (Button)findViewById(R.id.btnAddItem);
         viewSwitch = (Switch)findViewById(R.id.switchView);
+        cameraImageBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.image1);
 
         //set Adapter
         items = new ArrayList<CustomItem>();
@@ -68,7 +72,7 @@ public class MainActivity_grid extends AppCompatActivity {
         });
 
         //Add item to adapter
-        CustomItem newItem = new CustomItem("Google", "xxxx", "location");
+        CustomItem newItem = new CustomItem("Google", cameraImageBitmap, "location");
         itemsAdapter.add(newItem);
     }
 
@@ -78,7 +82,8 @@ public class MainActivity_grid extends AppCompatActivity {
             if (resultCode == RESULT_OK) {
                 String newItemTextValue=data.getStringExtra("itemText");
                 String newItemImageUri = data.getStringExtra("imgUri");
-                CustomItem newItem = new CustomItem(newItemTextValue, newItemImageUri, "location");
+                Bitmap cameraImageBitmap = (Bitmap) data.getExtras().get("imgBitmap");
+                CustomItem newItem = new CustomItem(newItemTextValue, cameraImageBitmap, "location");
                 Toast.makeText(this, "Picture taken!" + newItemTextValue, Toast.LENGTH_SHORT).show();
                 itemsAdapter.add(newItem);
             }

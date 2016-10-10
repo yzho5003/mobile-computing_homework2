@@ -54,11 +54,11 @@ public class FacebookLogin extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         callbackManager.onActivityResult(requestCode, resultCode, data);
-//        Intent intent = new Intent(FacebookLogin.this, MainActivity_grid.class);
-//
-//        if(intent != null){
-//            startActivity(intent);
-//        }
+        Intent intent = new Intent(FacebookLogin.this, MainActivity_grid.class);
+
+        if(intent != null){
+            startActivity(intent);
+        }
     }
 
 }
